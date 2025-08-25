@@ -2,7 +2,15 @@ import React from 'react';
 import aboutImage from '../assets/images/about2.png';
 
 const About = () => {
+
+  useEffect(() => {
+
+    document.title = "About Us | Shaheer Portfolio"
+
+  }, [])
+
   return (
+
     <div className="about-container">
       <div className="about-1" >
         <img src={aboutImage} alt="About Me" />

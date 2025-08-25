@@ -1,7 +1,14 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import axios from "axios";
 
 const Contact = () => {
+
+  useEffect(()=>{
+  
+      document.title = "Contact Me | Shaheer Portfolio"
+  
+    },[])
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",

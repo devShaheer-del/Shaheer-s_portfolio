@@ -15,6 +15,9 @@ const Services = () => {
     setTimeout(() => {
       setAnimate(true);
     }, 200);
+
+    document.title = "Services | Shaheer Protfolio"
+
   }, []);
 
   const skills = [

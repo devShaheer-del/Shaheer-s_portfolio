@@ -1,10 +1,15 @@
-import React from "react";
+import React,{useEffect} from "react";
 // import "./Portfolio.css";
 import project1 from "../assets/images/project1.png"; // apni image import karo
 import project2 from "../assets/images/project2.png"; // apni image import karo
 import project3 from "../assets/images/project3.png";
 import project4 from "../assets/images/project4.png";
 const Portfolio = () => {
+  useEffect(()=>{
+  
+      document.title = "Portfolio | Shaheer Portfolio"
+  
+    },[])
   return (
     <div className="portfolio-container">
       <div className="portfolio-item">

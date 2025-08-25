@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import hero from '../assets/images/hero.png';
 import Typewriter from "typewriter-effect";
 import { Link } from 'react-router-dom';
 
 const Home = () => {
+
+  useEffect(()=>{
+
+    document.title = "Home | Shaheer Portfolio"
+
+  },[])
+
   return (
     <div className='hero-container'>
 
