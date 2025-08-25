@@ -7,14 +7,10 @@ import seo from '../assets/icons/seo.png';
 import wordpress from '../assets/icons/wordpress.png';
 
 const Services = () => {
-
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
-    // Trigger animation on page load
-    setTimeout(() => {
-      setAnimate(true);
-    }, 200);
+    setTimeout(() => setAnimate(true), 200);
   }, []);
 
   const skills = [
@@ -28,70 +24,36 @@ const Services = () => {
 
   return (
     <>
-
       <div className="container-service">
-
-        <div className='text-content'>
+        <div className='text-content' data-aos="fade-down">
           <h1>Services</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quam totam odio, nobis, qui ipsam, ut aliquam adipisci exercitationem laudantium labore harum similique mollitia.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
         </div>
-
 
         <div className="services">
-          <div className='service-box'>
-            <img src={frontend} alt="" />
-            <h5>Front End Development</h5>
-            <div className='line'></div>
-          </div>
-
-          <div className='service-box'>
-            <img src={backend} alt="" />
-            <h5>Front End Development</h5>
-            <div className='line'></div>
-          </div><div className='service-box'>
-            <img src={database} alt="" />
-            <h5>Back End Development</h5>
-            <div className='line'></div>
-          </div><div className='service-box'>
-            <img src={mobile} alt="" />
-            <h5>Cross Platform Apps Development</h5>
-            <div className='line'></div>
-          </div><div className='service-box'>
-            <img src={seo} alt="" />
-            <h5>Search Engine Optimization</h5>
-            <div className='line'></div>
-          </div><div className='service-box'>
-            <img src={wordpress} alt="" />
-            <h5>WordPress Development</h5>
-            <div className='line'></div>
-          </div>
-
+          <div className='service-box' data-aos="zoom-in"><img src={frontend} alt="" /><h5>Front End Development</h5></div>
+          <div className='service-box' data-aos="zoom-in"><img src={backend} alt="" /><h5>Back End Development</h5></div>
+          <div className='service-box' data-aos="zoom-in"><img src={database} alt="" /><h5>Database Management</h5></div>
+          <div className='service-box' data-aos="zoom-in"><img src={mobile} alt="" /><h5>Cross Platform Apps</h5></div>
+          <div className='service-box' data-aos="zoom-in"><img src={seo} alt="" /><h5>SEO</h5></div>
+          <div className='service-box' data-aos="zoom-in"><img src={wordpress} alt="" /><h5>WordPress Development</h5></div>
         </div>
-
       </div>
 
-
-
-
       <div className="skills-container">
-        <div className="text-content">
+        <div className="text-content" data-aos="fade-up">
           <h1>My Skills</h1>
-          <p>
-            Here are some of my technical skills and expertise represented in
-            progress bars.
-          </p>
+          <p>Here are some of my technical skills...</p>
         </div>
 
         <div className="skills-box">
           {skills.map((skill, index) => (
-            <div className="skill" key={index}>
+            <div className="skill" key={index} data-aos="fade-right">
               <span>{skill.name}</span>
               <div className="progress">
                 <div
                   className="progress-bar"
-                  style={{
-                    width: animate ? skill.level : "0%",
-                  }}
+                  style={{ width: animate ? skill.level : "0%" }}
                 >
                   {animate ? skill.level : ""}
                 </div>
@@ -100,8 +62,6 @@ const Services = () => {
           ))}
         </div>
       </div>
-
-
     </>
   )
 }
