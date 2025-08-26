@@ -34,13 +34,13 @@ const Services = () => {
 
       <div className="container-service">
 
-        <div className='text-content'>
+        <div className='text-content' data-aos="flip-right">
           <h1>Services</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quam totam odio, nobis, qui ipsam, ut aliquam adipisci exercitationem laudantium labore harum similique mollitia.</p>
+          <p>I provide complete web development services, from creating responsive front-end designs to building secure back-end systems. With expertise in MERN Stack and Laravel, I deliver scalable solutions that meet client needs. I also offer training and mentorship, helping students and professionals strengthen their development skills.</p>
         </div>
 
 
-        <div className="services">
+        <div className="services" data-aos="zoom-out">
           <div className='service-box'>
             <img src={frontend} alt="" />
             <h5>Front End Development</h5>
@@ -77,7 +77,7 @@ const Services = () => {
 
 
       <div className="skills-container">
-        <div className="text-content">
+        <div className="text-content" data-aos="flip-up">
           <h1>My Skills</h1>
           <p>
             Here are some of my technical skills and expertise represented in
@@ -85,7 +85,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="skills-box">
+        <div className="skills-box" data-aos="fade-right">
           {skills.map((skill, index) => (
             <div className="skill" key={index}>
               <span>{skill.name}</span>

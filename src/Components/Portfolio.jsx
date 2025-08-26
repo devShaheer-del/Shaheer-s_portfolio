@@ -1,18 +1,18 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 // import "./Portfolio.css";
 import project1 from "../assets/images/project1.png"; // apni image import karo
 import project2 from "../assets/images/project2.png"; // apni image import karo
 import project3 from "../assets/images/project3.png";
 import project4 from "../assets/images/project4.png";
 const Portfolio = () => {
-  useEffect(()=>{
-  
-      document.title = "Portfolio | Shaheer Portfolio"
-  
-    },[])
+  useEffect(() => {
+
+    document.title = "Portfolio | Shaheer Portfolio"
+
+  }, [])
   return (
     <div className="portfolio-container">
-      <div className="portfolio-item">
+      <div className="portfolio-item" data-aos="fade-right">
         {/* Left Side - Image */}
         <div className="portfolio-image">
           <img src={project1} alt="Project 1" />
@@ -43,7 +43,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      <div className="portfolio-item">
+      <div className="portfolio-item" data-aos="fade-right">
         {/* Left Side - Image */}
         <div className="portfolio-image">
           <img src={project2} alt="Project 1" />
@@ -78,7 +78,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-       <div className="portfolio-item">
+      <div className="portfolio-item" data-aos="fade-right">
         {/* Left Side - Image */}
         <div className="portfolio-image">
           <img src={project3} alt="Project 1" />
@@ -89,7 +89,7 @@ const Portfolio = () => {
           <h2>Fitness Tracker</h2>
           <p>
             This is Complete Web Application with User and Admin  dashboard this is Online build your dream pc
-            like Gaming beast you have to access select a seprate seprate part of intier pc and build it 
+            like Gaming beast you have to access select a seprate seprate part of intier pc and build it
             and in this web have a pre build pc already here you can see more option to buy and build your
             dream pc as well.
           </p>
@@ -99,11 +99,11 @@ const Portfolio = () => {
             <li>MySQL</li>
             <li>Tailwind Css</li>
             <li>Google fonts</li>
-        
+
 
           </ul>
           <div className="portfolio-links">
-      
+
             <a href="https://github.com/DANGEOUR/Build-Your-Dream" target="_blank" rel="noreferrer">
               GitHub Repo
             </a>
@@ -111,7 +111,7 @@ const Portfolio = () => {
         </div>
       </div>
 
-      <div className="portfolio-item">
+      <div className="portfolio-item" data-aos="fade-right">
         {/* Left Side - Image */}
         <div className="portfolio-image">
           <img src={project4} alt="Project 1" />
@@ -121,7 +121,7 @@ const Portfolio = () => {
         <div className="portfolio-details">
           <h2>Vaccination Management System</h2>
           <p>
-            This is Complete Web Application with User and Admin  dashboard here you can be apply for vaccination admin and super 
+            This is Complete Web Application with User and Admin  dashboard here you can be apply for vaccination admin and super
             admin can manage and add user data and many more thing this is fully functionall web.
           </p>
           <h4>Technologies Used:</h4>
@@ -130,11 +130,11 @@ const Portfolio = () => {
             <li>MySQL</li>
             <li>Tailwind Css</li>
             <li>Google fonts</li>
-        
+
 
           </ul>
           <div className="portfolio-links">
-      
+
             <a href="https://github.com/DANGEOUR/vaccination" target="_blank" rel="noreferrer">
               GitHub Repo
             </a>
